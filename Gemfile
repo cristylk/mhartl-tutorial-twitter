@@ -8,11 +8,13 @@ group :development, :test do
 # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
   gem 'rspec-rails', '2.13.1'
+  gem 'guard-rspec', '2.5.0'
 end
 
 group :test do
-  gem 'selenium-webdriver'
+  gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
+  gem 'growl', '1.0.3'
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
@@ -41,8 +43,8 @@ group :doc do
 end
 
 group :production do
-  gem 'pg'
-  gem 'rails_12factor'
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
 end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
